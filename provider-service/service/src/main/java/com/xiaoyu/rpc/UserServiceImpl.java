@@ -43,7 +43,13 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User updateUserById(Integer id) {
-        return null;
+    public User updateUser(User businessUser) {
+        User user=userRepository.findFirstById(businessUser.getId());
+        if (businessUser.getAge()!=null)
+            user.setAge(businessUser.getAge());
+        if (businessUser.getNickName()!=null)
+            user.setNickName(businessUser.getNickName());
+        user.setUpdateTime(new Date());
+        return userRepository.save(user);
     }
 }

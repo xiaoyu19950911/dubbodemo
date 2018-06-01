@@ -1,0 +1,12 @@
+spring:
+  dubbo:
+    appname: consumer
+    registry: zookeeper://47.98.108.55:2181
+    protocol: dubbo
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://47.98.108.55:3306/dubbo?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      username: xiaoyu
+      password: 123456
+server:
+  port: 8002

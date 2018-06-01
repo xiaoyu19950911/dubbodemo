@@ -10,4 +10,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @create: 2018-05-28 16:24
  **/
 public interface UserRepository extends JpaRepository<User,Integer> {
+
+    User findFirstById(Integer id);
 }

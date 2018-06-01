@@ -32,8 +32,8 @@ public interface UserService {
 
     /**
      *
-     * @param id
+     * @param user
      * @return User
      */
-    public User updateUserById(Integer id);
+    public User updateUser(User user);
 }

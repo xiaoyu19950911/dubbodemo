@@ -14,7 +14,13 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api-service" target="1.5" />
+      <module name="common-service" target="1.8" />
+      <module name="consumer-service" target="1.8" />
+      <module name="dubbo-demo" target="1.8" />
       <module name="entity" target="1.5" />
+      <module name="model" target="1.8" />
+      <module name="provider-service" target="1.8" />
+      <module name="service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
